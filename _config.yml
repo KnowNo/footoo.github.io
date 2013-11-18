@@ -1,0 +1,34 @@
+markdown:         rdiscount
+pygments:         true
+paginate:         4
+
+title:            HIT FoOTOo Lab
+url:              
+feed:             /atom.xml
+author:
+    name:         
+    email:        
+    description:  
+about:            
+follow:
+    email:        
+    github:       https://github.com/organizations/FoOTOo
+    twitter:      
+    google:       
+    facebook:     
+description:      
+
+indexContent:     true
+imageLink:        http://www.pizn.net/static/images/20121109Monutain.jpg
+
+
+style:            /css/style.css
+blogName:         FoOTOo 
+blogDesc:         浮图实验室
+favicon:          /favicon.ico
+theme:            black 
+
+disqus:           FoOTOo
+
+copyright:        Copyright © 2013 HIT FoOTOo Lab All rights reserved.
+test:             ok
