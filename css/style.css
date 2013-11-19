@@ -383,6 +383,9 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .pagination-link .prev      { float: left; }
 .pagination-link .next      { float: right; }
 
+/* DeathKing's Modify */
+#logo img {width: 200px; overflow: hidden;  line-height: 200px; text-align: center;}
+
 /*************************
  * Post style
  *************************/
