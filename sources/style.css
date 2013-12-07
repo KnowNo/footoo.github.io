@@ -116,15 +116,17 @@ hr {
 }
 
 ul {
-
+    padding: 3%;
+    font-size: 20px;
 }
 
 ol {
-
+    padding: 3%;
+    font-size: 20px;
 }
 
 li {
-    
+    padding: 2%;
 }
 
 p {
