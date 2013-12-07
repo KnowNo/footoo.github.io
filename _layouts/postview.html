@@ -5,8 +5,8 @@
 </head>
 <body>
 {% include navbar.html %}
-<p class="center date">{{ page.date | date_to_string }}</p>
-{{ content }}
+<p class="center date">date: {{ page.date | date_to_string }}, author: {{page.author}}</p>
+<div class="content">{{ content }}</div>
 <hr>
 {% include footer.html %}
 </body>
