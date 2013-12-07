@@ -118,6 +118,7 @@ hr {
 ul {
     padding: 3%;
     font-size: 20px;
+    list-style: none;
 }
 
 ol {
