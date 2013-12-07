@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: hacker;
-    src: url('{{site.url}}/_sources/ARCADE.TTF');
+    src: url('https://raw.github.com/FoOTOo/footoo.github.io/master/_sources/ARCADE.TTF');
 }
 
 ::selection {
