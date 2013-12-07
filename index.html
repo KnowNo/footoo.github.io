@@ -1,28 +1,57 @@
 ---
-layout: default
-date: Index
+layout: hacker
+title: blog
+metakey: 
+metades: 
 ---
-{% for rpost in paginator.posts %}
-	<article class="post fn-clear">
-        <h2 class="post-title"><a href="{{ site.url }}{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></h2>
-        <p class="time"><time pubdate="{{ rpost.date }}">{{ rpost.date | date_to_string }}</time></p>
-        {% if site.indexContent == true %}
-        {{ rpost.content }}
-        {% else %}
-        <p>{{ rpost.description }}</p>
-        {% endif %}
-    </article>
+
+{% for post in paginator.posts %}
+    <h4 class="center"><a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h4>
+    <p>{{ post.excerpt }}</p>
+    <p class="center date">date:{{ post.date | date_to_long_string }}</p>
+    <br>
 {% endfor %}
-{% if paginator.total_pages > 1 %}
-    <nav id="pagination" class="fn-clear">
-        <ul class="pagination">
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                    <li class="current"><a href="javascript:void(0);">{{ page }}</a></li>
+
+<div class="center">
+    {% if paginator.previous_page != nil %}
+        {% if paginator.previous_page == 1 %}
+            <a href="{{site.url}}/">Previous</a>
+        {% else %}
+            <a href="{{site.url}}/page{{paginator.previous_page}}">Previous</a>
+        {% endif %}
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+        {% if paginator.total_pages - paginator.page <= 10 %}
+            {% if paginator.page - 1 <= 10 %}
+                {% if page != 1 %}
+                    <a href="{{site.url}}/page{{page}}"> {{page}} </a>
                 {% else %}
-                    <li><a href="{{ site.url }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
+                    <a href="{{site.url}}"> {{page}} </a>
                 {% endif %}
-            {% endfor %}
-        </ul>
-    </nav>
-{% endif %}	
+            {% else %}
+                {% if page >= paginator.page - 10 %}
+                    <a href="{{site.url}}/page{{page}}"> {{page}} </a>
+                {% endif %}
+            {% endif %}
+        {% else %}
+            {% if page <= paginator.page + 10 %}
+                {% if paginator.page - 1 <= 10 %}
+                        {% if page != 1 %}
+                            <a href="{{site.url}}/page{{page}}"> {{page}} </a>
+                        {% else %}
+                            <a href="{{site.url}}"> {{page}} </a>
+                        {% endif %}
+                {% else %}
+                    {% if page >= paginator.page - 10 %}
+                        <a href="{{site.url}}/page{{page}}"> {{page}} </a>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page != nil %}
+        <a href="{{site.url}}/page{{paginator.next_page}}">Next</a>
+    {% endif %}
+</div>
