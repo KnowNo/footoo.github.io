@@ -1,10 +1,8 @@
 ---
 layout: postview
-title: 浮图实验室大事记
+title: FoOTOo's Events
 author: DeathKing
 ---
-
-####大事记
 
 + 1997年 IBM俱乐部成立(具体日期不可考)
 + 2005年8月1日，IBMTC Wiki正式建立，世人从此不再烦恼（周蓝珺）
