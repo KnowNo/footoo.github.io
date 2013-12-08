@@ -4,7 +4,7 @@
     logo.appendChild(text);
 
     var str = "Welcome to FoOTOo Lab";
-    var timer = setInterval(writer, 300);
+    var timer = setInterval(writer, 100);
     var count = 0;
 
     function writer() {
@@ -18,7 +18,7 @@
         clearInterval(timer);
         var exsit = false;
         var otext = text.textContent;
-        setInterval(callback, 700);
+        setInterval(callback, 500);
 
         function callback() {
             if (exsit) {
