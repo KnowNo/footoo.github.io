@@ -92,14 +92,28 @@ h5 {
 
 code {
     font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgb(17, 17, 15);
+    color: rgb(84, 90, 90);
+    padding: 0.5%;
 }
 
 pre {
     font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgb(14, 18, 31);
+    color: darkorange;
+    width: 40%;
+    padding: 1%;
 }
 
-img {
 
+img {
+    padding: 5%;
+    border-style: dotted;
+    border-radius: 20px;
 }
 
 footer {
