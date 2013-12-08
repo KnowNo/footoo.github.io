@@ -4,7 +4,7 @@
     logo.appendChild(text);
 
     var str = "Welcome to FoOTOo Lab";
-    var timer = setInterval(writer, 500);
+    var timer = setInterval(writer, 300);
     var count = 0;
 
     function writer() {
