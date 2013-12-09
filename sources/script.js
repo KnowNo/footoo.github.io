@@ -9,12 +9,12 @@
 
     function writer() {
         if (count == str.length)
-            return flicker();
+            return clearInterval(timer);
         text.textContent += str[count];
         count++;
     }
 
-    function flicker() {
+    /*function flicker() {
         clearInterval(timer);
         var exsit = false;
         var otext = text.textContent;
@@ -29,5 +29,5 @@
                 exsit = true;
             }
         }
-    }
+    }*/
 })(this);
