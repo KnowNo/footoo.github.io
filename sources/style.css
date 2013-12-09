@@ -28,8 +28,8 @@ nav {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 3%;
-    padding-right: 15%;
-    padding-left: 15%;
+    /*padding-right: 15%;*/
+    /*padding-left: 15%;*/
 }
 
 a {
@@ -46,7 +46,7 @@ header a {
 }
 
 nav a {
-    padding: 4%;
+    padding: 3%;
 }
 
 a:hover {
