@@ -168,3 +168,32 @@ p {
     padding-left: 20%;
     padding-right: 20%;
 }
+
+@-webkit-keyframes blink {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-moz-keyframes blink {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#print {
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+}
+
+#print:after {
+    content: "_";
+    color: #24C012;
+}
