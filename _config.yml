@@ -2,3 +2,4 @@ baseurl: /
 url: http://footoo.github.io
 pygments: true
 paginate: 5
+markdown: rdiscount
