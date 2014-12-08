@@ -1,5 +1,5 @@
-baseurl: http://rabbit-deer-you.github.io
-url: http://rabbit-deer-you.github.io
+baseurl: http://footoo.github.io
+url: http://footoo.github.io
 pygments: true
 paginate: 5
 markdown: rdiscount
