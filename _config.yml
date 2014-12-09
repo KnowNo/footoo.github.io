@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: http://footoo.github.io
 url: http://footoo.github.io
 pygments: true
 paginate: 5

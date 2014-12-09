@@ -1,13 +1,12 @@
 ---
 layout: hacker
-title: Activities
+title: Lectures
 metakey: 
 metades: 
 ---
-
 <div class="content">
 <ul>
-{% for post in site.categories.activities %}
+{% for post in site.categories.lecture %}
   <li>
     <span>{{ post.date | date_to_long_string }} »» <a href="{{site.url}}{{post.url}}">{{ post.title }}</a></span>
   </li>

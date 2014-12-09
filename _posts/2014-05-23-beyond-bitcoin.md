@@ -3,6 +3,7 @@ layout: postview
 title: Beyond Bitcoin
 tags: [bitcoine]
 author: DeathKing
+category: lecture
 ---
 
 On May 23th, Cliff Woo gave a wonderful introduction to Bitcoin. Here is the slide:
