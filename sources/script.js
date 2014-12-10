@@ -1,33 +1,13 @@
 (function (global) {
-    var logo = document.getElementById('logo');
-    var text = document.createTextNode('');
-    logo.appendChild(text);
-
-    var str = "Welcome to FoOTOo Lab";
-    var timer = setInterval(writer, 100);
+    var logo = document.querySelector('#logo');
+    var title = "Welcome to FoOTOo Lab";
     var count = 0;
-
-    function writer() {
+    var timeout = 100;
+    var timer = setInterval(writer, timeout, title, count);
+    
+    function writer(str, count) {
         if (count == str.length)
             return clearInterval(timer);
-        text.textContent += str[count];
-        count++;
+        logo.innerHTLM += str[count++];
     }
-
-    /*function flicker() {
-        clearInterval(timer);
-        var exsit = false;
-        var otext = text.textContent;
-        setInterval(callback, 500);
-
-        function callback() {
-            if (exsit) {
-                text.textContent = otext;
-                exsit = false;
-            } else {
-                text.textContent += '_';
-                exsit = true;
-            }
-        }
-    }*/
 })(this);
