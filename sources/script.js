@@ -8,6 +8,6 @@
     function writer(str) {
         if (count == str.length)
             return clearInterval(timer);
-        logo.innerHTLM += str[count++];
+        logo.innerHTML += str[count++];
     }
 })(this);
